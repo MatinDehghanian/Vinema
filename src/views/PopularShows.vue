@@ -28,8 +28,8 @@
       return {
         shows: [],
         pageTitle: "محبوب ترین سریال ها",
-        imageURL: "https://image.tmdb.org/t/p/w1280",
-        sortCriteria: "Most Popular",
+        imageURL: "https://image.tmdb.org/t/p/w500/wwemzKWzjKYJFfCeiB57q3r4Bcm.png",
+        sortCriteria: "محبوب ترین",
         sortedBy: "popularity",
         page: 1,
         showPagination: false
@@ -40,7 +40,7 @@
         const key = process.env.VUE_APP_KEY;
         axios
           .get(
-            "https://api.themoviedb.org/3/tv/popular?api_key=" +
+            "https://api.themoviedb.org/3/tv/popular?api_key=7829128984f7c8d85e87395c4b6327b8" +
               key +
               "&language=en-US&page=" +
               this.page
@@ -63,7 +63,7 @@
       sortBy(prop) {
         console.log(prop);
         if (prop === "popularity") {
-          this.sortCriteria = "Most Popular";
+          this.sortCriteria = "محبوب ترین";
         } else if (prop === "vote_average") {
           this.sortCriteria = "Highest Rated";
         } else if (prop === "release_date") {
