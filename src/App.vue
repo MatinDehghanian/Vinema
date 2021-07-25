@@ -14,6 +14,11 @@
   import Navbar from "./components/Navbar.vue";
   import Footer from "./components/Footer";
   export default {
+    methods: {
+      changeRTL () {
+        this.$vuetify.rtl = true
+      },
+    },
     name: "App",
     components: {
       appNavbar: Navbar,
@@ -24,3 +29,15 @@
     })
   };
 </script>
+
+<style>
+textarea {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+.v-application {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+</style>>

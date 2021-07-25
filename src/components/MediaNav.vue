@@ -1,7 +1,7 @@
 <template>
   <v-layout justify-end row class="mt-3 mr-4">
     <v-flex class="ml-5" align-self-center>
-      <h1 class="display-1 font-weight-light">{{pageTitle}}</h1>
+      <h1 class="font-sans font-weight-light">{{pageTitle}}</h1>
       <h5 class="font-weight-light">{{sortCriteria}}</h5>
     </v-flex>
     <v-spacer></v-spacer>

@@ -11,7 +11,7 @@
           <v-card-text>
             <v-expansion-panels focusable>
               <v-expansion-panel id="synopsis">
-                <v-expansion-panel-header>Synopsis</v-expansion-panel-header>
+                <v-expansion-panel-header class="font-sans">خلاصه داستان</v-expansion-panel-header>
                 <v-expansion-panel-content>{{movie.overview}}</v-expansion-panel-content>
               </v-expansion-panel>
             </v-expansion-panels>
