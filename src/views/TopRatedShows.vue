@@ -28,7 +28,7 @@
       return {
         shows: [],
         pageTitle: "برترین سریال ها",
-        imageURL: "https://image.tmdb.org/t/p/w500/wwemzKWzjKYJFfCeiB57q3r4Bcm.png",
+        imageURL: "https://image.tmdb.org/t/p/w500/",
         sortCriteria: "Most Popular",
         sortedBy: "popularity",
         page: 1,
@@ -40,7 +40,7 @@
         const key = process.env.VUE_APP_KEY;
         axios
           .get(
-            "https://api.themoviedb.org/3/tv/top_rated?api_key=7829128984f7c8d85e87395c4b6327b8" +
+            "https://api.themoviedb.org/3/tv/top_rated?api_key=" +
               key +
               "&language=en-US&page=" +
               this.page
